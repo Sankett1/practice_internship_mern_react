@@ -13,6 +13,16 @@ import { MapDemo5 } from './components/MapDemo5';
 import { MapDemo6 } from './components/MapDemo6';
 import { MapDemo7 } from './components/MapDemo7';
 import { MapDemo8 } from './components/MapDemo8';
+import { Route, Routes } from 'react-router-dom';
+import { Navbar } from './components/Navbar';
+import { HomeComponent } from './components/HomeComponent';
+import { NetflixHome } from './components/NetflixHome';
+import { NetflixShows } from './components/NetflixShows';
+import { NetflixMovies } from './components/NetflixMovies';
+import { Watch } from './components/Watch';
+import { ErrorNotFound } from './components/ErrorNotFound';
+import { TeamDetails } from './components/TeamDetails';
+import { Playing } from './components/Playing';
 
 
 
@@ -25,16 +35,18 @@ function App() {
  
   return (
     <div>
-      <HeaderComponent></HeaderComponent>
-      <MapDemo1></MapDemo1>
-      <MapDemo2></MapDemo2>
-      <MapDemo3></MapDemo3>
-      <MapDemo4></MapDemo4>
-      <MapDemo5></MapDemo5>
-      <MapDemo6></MapDemo6>
-      <MapDemo7></MapDemo7>
-      <MapDemo8></MapDemo8>
-      <FooterComponent></FooterComponent>
+    <Navbar></Navbar>
+      <Routes>
+        <Route path="/" element={<HomeComponent/>}></Route>
+        <Route path="/netflixhome" element={<NetflixHome/>}></Route>
+        <Route path="/netflixshows" element={<NetflixShows/>}></Route>
+        <Route path="/netflixmovies" element={<NetflixMovies/>}></Route>
+        <Route path="/watch/:name" element={<Watch/>}></Route>
+        <Route path="/teamdetails" element={<TeamDetails/>}></Route>
+        <Route path="/playing/:name" element={<Playing/>}></Route>
+        <Route path="/*" element={<ErrorNotFound/>}></Route>
+        
+      </Routes>
     </div>
   );
 }

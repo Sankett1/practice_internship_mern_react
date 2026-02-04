@@ -35,7 +35,7 @@ export const MapDemo8 = () => {
                             <td>{u.city}</td>
                             <td style={{color: u.gender === "female" ? "lightcoral": "black"}}>{u.gender}</td>
                             <td> 
-                                 {u.image && <img src={u.image} alt="user" width="50" height="50"/>}
+                                 {u.image && <img src={u.image} clalt="user" width="50" height="50"/>}
                                    
                             </td>
                         </tr>
