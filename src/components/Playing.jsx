@@ -8,7 +8,7 @@ export const Playing = () => {
 
   return (
     <div style={{textAlign:'center', marginTop:'50px'}}>
-         <h1> {TeamDetails} Team is Playing Now </h1>
+         <h1> {TeamDetails} is Playing Now </h1>
     </div>
   )
 }
