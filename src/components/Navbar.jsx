@@ -32,6 +32,22 @@ export const Navbar = () => {
              Teams
         </Link>
       </li>
+      <li class="nav-item">
+        <Link class="nav-link" to="/usestatedemo1">
+             UseStateDemo1
+        </Link>
+      </li>
+      <li class="nav-item">
+        <Link class="nav-link" to="/usestatedemo2">
+              UseStateDemo2
+        </Link>
+      </li>
+        <li class="nav-item">
+        <Link class="nav-link" to="/usestatedemo3">
+              UseStateDemo3
+        </Link>
+      </li>
+      
     </ul>
 
   </div>
