@@ -26,6 +26,12 @@ import { Playing } from './components/Playing';
 import { UseStateDemo1 } from './components/UseStateDemo1';
 import { UseStateDemo2 } from './components/UseStateDemo2';
 import { UseStateDemo3 } from './components/UseStateDemo3';
+import { Employees } from './components/Employees';
+import { InputDemo1 } from './components/input/InputDemo1';
+import { InputDemo2 } from './components/input/InputDemo2';
+import { FormDemo } from './components/form/FormDemo';
+import { Form1 } from './components/form/Form1';
+
 
 
 
@@ -50,7 +56,11 @@ function App() {
         <Route path="/usestatedemo1" element={<UseStateDemo1/>}></Route>
         <Route path="/usestatedemo2" element={<UseStateDemo2/>}></Route>
         <Route path="/usestatedemo3" element={<UseStateDemo3/>}></Route>
-        
+        <Route path="/employees" element={<Employees/>}></Route>
+        <Route path="/inputdemo1" element={<InputDemo1/>}></Route>
+        <Route path="/inputdemo2" element={<InputDemo2/>}></Route>
+        <Route path="/formdemo" element={<FormDemo/>}></Route>
+        <Route path="/form1" element={<Form1/>}></Route>
       </Routes>
     </div>
   );

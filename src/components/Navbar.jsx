@@ -12,7 +12,7 @@ export const Navbar = () => {
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
+      {/* <li class="nav-item active">
         <Link class="nav-link" to="/netflixhome">
              Home
         </Link>
@@ -46,7 +46,33 @@ export const Navbar = () => {
         <Link class="nav-link" to="/usestatedemo3">
               UseStateDemo3
         </Link>
+      </li> */}
+      <li class="nav-item">
+        <Link class="nav-link" to="/employees">
+              Employees
+        </Link>
       </li>
+      <li class="nav-item">
+        <Link class="nav-link" to="/inputdemo1">
+              InputDemo1
+        </Link>
+      </li>
+      <li class="nav-item">
+        <Link class="nav-link" to="/inputdemo2">
+              InputDemo2
+        </Link>
+      </li>
+      <li class="nav-item">
+        <Link class="nav-link" to="/formdemo">
+              FormDemo
+        </Link>
+      </li>
+      <li class="nav-item">
+        <Link class="nav-link" to="/form1">
+              Form1
+        </Link>
+      </li>
+     
       
     </ul>
 
