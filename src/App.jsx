@@ -36,6 +36,8 @@ import { Form3 } from './components/form/Form3';
 import { ApiDemo1 } from './components/api/ApiDemo1';
 import { ApiDemo2 } from './components/api/ApiDemo2';
 import { ApiDemo3 } from './components/api/ApiDemo3';
+import { OmdbSearch } from './components/api/OmdbSearch';
+import { OmdbDetails } from './components/api/OmdbDetails';
 
 
 
@@ -71,6 +73,8 @@ function App() {
         <Route path="/apidem1" element={<ApiDemo1/>}></Route>
         <Route path="/apidem2" element={<ApiDemo2/>}></Route>
         <Route path="/apidem3" element={<ApiDemo3/>}></Route>
+        <Route path="/omdbsearch" element={<OmdbSearch/>}></Route>
+        <Route path="/omdb/:id" element={<OmdbDetails/>}></Route>
       </Routes>
     </div>
   );

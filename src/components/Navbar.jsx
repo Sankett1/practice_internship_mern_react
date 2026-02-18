@@ -100,6 +100,12 @@ export const Navbar = () => {
               ApiDemo3
         </Link>
       </li>
+
+      <li class="nav-item">
+        <Link class="nav-link" to="/omdbsearch">
+              OmdbSearch
+        </Link>
+      </li>
       
     </ul>
 
