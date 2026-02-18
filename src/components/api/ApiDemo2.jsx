@@ -13,19 +13,13 @@ export const ApiDemo2 = () => {
        
     }
 
-    const [comments, setcomments] = useState([])
-    const getComments = async()=>{
-        const response = await axios.get(" https://dummyjson.com/comments")
-        console.log(response)
-        setcomments(response.data.comments)
-    }
 
   return (
     <div style={{display:"flex", flexDirection:"column", alignItems:"center"}}>
-        <h1>ApiDemo2</h1>
-        <button onClick={()=>{getProducts()}}>GET</button>
+        
 
         <h1>TABLE 1</h1>
+        
 
         <table border="1" align="center">
                     <thead>
@@ -40,8 +34,8 @@ export const ApiDemo2 = () => {
                     </thead>
                     <tbody>
                         {
-            products.map((product)=>{
-                return <tr> 
+                            products.map((product)=>{
+                                return <tr> 
                             <td>{product.id}</td>
                             <td>{product.title}</td>
                             <td>{product.description}</td>
@@ -54,41 +48,8 @@ export const ApiDemo2 = () => {
                         
                     </tbody>
                 </table>
+             <button onClick={()=>{getProducts()}}>GET</button>
 
-                
-        <button onClick={()=>{getComments()}}>GET</button>
-
-        <h1>TABLE 2</h1>
-
-        <table border="1" align="center">
-                    <thead>
-                        <tr>
-                            <th>ID</th>
-                            <th>BODY</th>
-                            <th>POST ID</th>
-                            <th>LIKES</th>
-                            <th>USER ID</th>
-                            <th>USERNAME</th>
-                            <th>FULLNAME</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {
-            comments.map((comment)=>{
-                return <tr> 
-                            <td>{comment.id}</td>
-                            <td>{comment.body}</td>
-                            <td>{comment.postId}</td>
-                            <td>{comment.likes}</td>
-                            <td>{comment.user.id}</td>
-                            <td>{comment.user.username}</td>
-                            <td>{comment.user.fullName}</td>
-                            </tr>
-                            })
-                        }
-
-                    </tbody>
-                </table>
     </div>  
   )
 }

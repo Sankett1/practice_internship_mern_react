@@ -47,7 +47,7 @@ export const Navbar = () => {
               UseStateDemo3
         </Link>
       </li> */}
-      <li class="nav-item">
+      {/* <li class="nav-item">
         <Link class="nav-link" to="/employees">
               Employees
         </Link>
@@ -61,7 +61,7 @@ export const Navbar = () => {
         <Link class="nav-link" to="/inputdemo2">
               InputDemo2
         </Link>
-      </li>
+      </li> */}
       <li class="nav-item">
         <Link class="nav-link" to="/formdemo">
               FormDemo
@@ -92,6 +92,12 @@ export const Navbar = () => {
       <li class="nav-item">
         <Link class="nav-link" to="/apidem2">
               ApiDemo2
+        </Link>
+      </li>
+
+      <li class="nav-item">
+        <Link class="nav-link" to="/apidem3">
+              ApiDemo3
         </Link>
       </li>
       

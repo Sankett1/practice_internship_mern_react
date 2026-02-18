@@ -21,9 +21,8 @@ export const ApiDemo1 = () => {
     }
 
   return (
-    <div>
-        <h1>ApiDemo</h1>
-        <button onClick={()=>{getUser()}}>GET</button>
+    <div style={{display:"flex", flexDirection:"column", alignItems:"center"}}>
+        <h1>ApiDemo 1</h1>
 
         <h1>MESAAGE = {message} </h1>
 
@@ -42,8 +41,8 @@ export const ApiDemo1 = () => {
                     </thead>
                     <tbody>
                         {
-            users.map((user)=>{
-                return <tr> 
+                            users.map((user)=>{
+                                return <tr> 
                             <td>{user._id}</td>
                             <td>{user.name}</td>
                             <td>{user.email}</td>
@@ -56,6 +55,7 @@ export const ApiDemo1 = () => {
                         
                     </tbody>
                 </table>
+            <button onClick={()=>{getUser()}}>GET</button>
            
     </div>
   )
